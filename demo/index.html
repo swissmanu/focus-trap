@@ -14,6 +14,11 @@
   <h1 tabindex="0">focus-trap demo</h1>
 
   <p>
+    <span style="font-size:2em;vertical-align:middle;">☜</span>
+    <a href="https://github.com/davidtheclark/focus-trap" style="vertical-align:middle;">Return to the repository</a>
+  </p>
+
+  <p>
     In the demos below, you'll be able to tell that a focus trap is active because it will turn pink. You should also be able to tell because it will trap your focus: you won't be able to do anything outside of the focus trap.
   </p>
 
@@ -50,6 +55,9 @@
     When this focus trap activates, focus jumps to a specific, manually specified element.
   </p>
   <p>
+    Also, in this demo the Escape key does not deactivate the focus trap. You must click the button.
+  </p>
+  <p>
     <button id="activate-two">
       activate trap 2
     </button>
@@ -73,9 +81,11 @@
 
   <h2 id="demo-three-heading">demo three</h2>
   <p>
-    Default behavior with a twist:
     When this focus trap activates, the first element in its tab order receives focus,
-    <em>but because of positive tabindex attributes the tab order is not the same as the source order</em>.
+    but because of positive tabindex attributes the tab order is not the same as the source order.
+  </p>
+  <p>
+    Also, clicking outside of this trap deactivates it and does not prevent the click's intended action.
   </p>
   <p>
     <button id="activate-three">
@@ -134,6 +144,11 @@
       </button>
     </p>
   </div>
+
+  <p>
+    <span style="font-size:2em;vertical-align:middle;">☜</span>
+    <a href="https://github.com/davidtheclark/focus-trap" style="vertical-align:middle;">Return to the repository</a>
+  </p>
 
   <script src="demo-bundle.js"></script>
 </body>
